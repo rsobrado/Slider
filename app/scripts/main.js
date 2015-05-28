@@ -56,6 +56,7 @@
 		document.getElementById('steps').innerHTML = generateSteps(stepsJson.steps);
 		document.getElementById('steps').innerHTML += '<li id="indicator"></li>';
 		document.getElementById('step-data').innerHTML = generateStepsData(stepsJson.steps);
+		
 	};
 
 

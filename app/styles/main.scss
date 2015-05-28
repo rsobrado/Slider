@@ -1,8 +1,12 @@
 // bower:scss
 // endbower
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+//--------- variables 
 $baby-blue : #36abe1;
+$baby-blue-light : #6fbee7;
+$gray : #65686f;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 *{
   box-sizing: border-box;
@@ -106,7 +110,6 @@ body {
         position: inherit;
 
         &:hover{
-          // background: rgba(white,1);
           color: $baby-blue;
           cursor: pointer;
         }
@@ -123,10 +126,10 @@ body {
         top: 0;
         z-index: 0;
 
-        -webkit-transition: all 0.5s ease-in-out;
-           -moz-transition: all 0.5s ease-in-out;
-             -o-transition: all 0.5s ease-in-out;
-                transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.65s ease-in-out;
+           -moz-transition: all 0.65s ease-in-out;
+             -o-transition: all 0.65s ease-in-out;
+                transition: all 0.65s ease-in-out;
 
       }
     }
@@ -134,7 +137,18 @@ body {
       overflow: hidden;
       height: 199px;
       position: relative;
-
+    }
+    .friends-online {
+      font-size: 13px;
+      color: $gray;
+      margin-left: 70px;
+      margin-top: 40px;
+      display: block;
+      float: left;
+      a{
+        color: $baby-blue-light;
+        text-decoration: none;
+      }
     }
     #step-data{
       padding: 0 70px;
@@ -145,10 +159,10 @@ body {
       position: absolute;
       top: 0;
 
-      -webkit-transition: all 0.3s ease-in-out;
-         -moz-transition: all 0.3s ease-in-out;
-           -o-transition: all 0.3s ease-in-out;
-              transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.45s ease-in-out;
+         -moz-transition: all 0.45s ease-in-out;
+           -o-transition: all 0.45s ease-in-out;
+              transition: all 0.45s ease-in-out;
       
       li{
         list-style: none;
@@ -172,15 +186,14 @@ body {
         margin-top: 10px;
       }
       p{
-        // margin-top: 24px;
         font-size: 13px;
         line-height: 18px;
-        color: #65686f;
+        color: $gray;
+        font-family: 'helvetica';
       }
       .step-header{
         width: 100%;
         overflow: hidden;
-        
         .step-tittle{
           float: left;
           padding-left: 0;
