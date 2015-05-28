@@ -1,0 +1,192 @@
+// bower:scss
+// endbower
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+$baby-blue : #36abe1;
+
+*{
+  box-sizing: border-box;
+}
+html, body {
+    height:100%;
+}
+h1,
+h2,
+h3{
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+  background: rgb(204,204,204);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.fa-3{
+  float: left;
+  font-size: 62px !important;
+  color: $baby-blue;
+  width: 95px;
+}
+.container{
+  max-width: 980px;
+  width: 100%;
+  background: white;
+  margin: 0 auto 60px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 100%;
+  height:100%;
+
+  -webkit-box-shadow: 0 0 10px 2px rgba(black, 0.4);
+     -moz-box-shadow: 0 0 10px 2px rgba(black, 0.4);
+          box-shadow: 0 0 10px 2px rgba(black, 0.4);
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444')";
+      filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444');
+
+  .header{
+    background: url(../images/header.jpg);
+    color: white;
+    height: 275px;
+    overflow: hidden;
+    h1{
+      float: right;
+      font-weight: 100;
+      margin: 50px 70px;
+      max-width: 500px;
+      text-align: right;
+      line-height: 1.2;
+      font-size: 32px;
+
+      strong{
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 48px;
+        font-weight: 400;
+      }
+    }
+  }
+  .active{
+    color: $baby-blue;
+  }
+  .content{
+    padding-top: 60px;
+    height: 100%;
+    #steps{
+      color: rgb(164,164,164);
+      background: rgb(236,236,236);
+      min-height: 100%;
+      box-shadow: inset -10px 0px 20px -14px;
+      max-width: 300px;
+      width: 30.6%;
+      float: left;
+      position: relative;
+      .step{
+        border-bottom: 1px solid white;
+        height: 60px;
+        text-align: right;
+        padding: 22px 25px;
+        font-size: 18px;
+        line-height: 1;
+        z-index: 1;
+        position: inherit;
+
+        &:hover{
+          // background: rgba(white,1);
+          color: $baby-blue;
+          cursor: pointer;
+        }
+        .fa {
+          margin-left: 35px;
+        }
+      }
+      #indicator{
+        height: 60px;
+        width: 100%;
+        background: rgba(white,0.9);
+        position: absolute;
+        display: block;
+        top: 0;
+        z-index: 0;
+
+        -webkit-transition: all 0.5s ease-in-out;
+           -moz-transition: all 0.5s ease-in-out;
+             -o-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+
+      }
+    }
+    .step-data-container {
+      overflow: hidden;
+      height: 200px;
+      position: relative;
+
+    }
+    #step-data{
+      padding: 0 70px;
+      max-width: 680px;
+      width: 100%;
+      overflow: hidden;
+      float: right;
+      position: absolute;
+      top: 0;
+
+      -webkit-transition: all 0.3s ease-in-out;
+         -moz-transition: all 0.3s ease-in-out;
+           -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+      
+      li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        height: 201px;
+        overflow: hidden;
+      }
+      h1{
+        color: $baby-blue;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-top: 8px;
+      }
+      h2{
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 10px;
+      }
+      p{
+        // margin-top: 24px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #65686f;
+      }
+      .step-header{
+        width: 100%;
+        overflow: hidden;
+        
+        .step-tittle{
+          float: left;
+          padding-left: 0;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+}
